@@ -14,7 +14,7 @@ module.exports = {
 
           stream.on('error', reject);
           stream.on('close', function() {
-	    fulfil('https://stldodnnodestorage.blob.core.windows.net/stdldodn/' + filename);
+	    fulfil('https://stldodnnodestorage.blob.core.windows.net/stldodn/' + filename);
 	  });
 
           stream.end(new Buffer(data));
